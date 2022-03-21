@@ -19,10 +19,10 @@ function lesson2_1() {
 let userI = 'ivan';
 console.log(userI);
 
-let prom = userI.charAt(0);
-let newUser = userI.replace(userI.charAt(0), prom.toUpperCase()); 
-//I can’t understand the syntax of how to pass only the first element 
-//of a string to a function without creating an intermediate variable
+// Ver 0.1 
+// let prom = userI.charAt(0);
+// let newUser = userI.replace(userI.charAt(0), prom.toUpperCase()); 
+let newUser = userI.replace(userI.charAt(0), userI[0].toUpperCase()); 
 console.log(newUser); //output Ivan
 
 //HomeWork 2_3
